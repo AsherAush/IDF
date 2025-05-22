@@ -10,13 +10,15 @@ namespace IDF.RedSide
     internal class Hamas : Armi
     {
 
-        public static List<Terrorist> Terroristlist;
+        public  List<Terrorist> Terroristlist;
 
-        public Hamas(List<Terrorist> terroristlist, DateTime dateOfEstablishment, string commanderName)
+        public Hamas( DateTime dateOfEstablishment, string commanderName, List<Terrorist> terroristlist)
             : base(dateOfEstablishment, commanderName)
         {
             Terroristlist = terroristlist;
         }
+
+
 
     }
 }

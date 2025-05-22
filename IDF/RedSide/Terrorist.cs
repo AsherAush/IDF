@@ -8,15 +8,19 @@ namespace IDF.RedSide
 {
     internal class Terrorist
     {
-        protected string Name;
-        public static string GetName()
+        public string Name;
+        public  string GetName()
         {
             return Name;
+        }
+        public  void SetName(string name)
+        {
+            Name = name;
         }
         protected int Rank;
         protected string Status;
         protected List<string> Weapon;
-    public Terrorist(string name, int  rank, string status, List<string> weapon)
+        public Terrorist(string name, int  rank, string status, List<string> weapon)
 
         {
             Name = name;
